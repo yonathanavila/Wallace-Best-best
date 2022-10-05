@@ -1,0 +1,176 @@
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Metrophobic&display=swap');
+//metropolis
+@import url('https://fontlibrary.org//face/metropolis');
+//icons
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+@import 'main-style/mixins.scss';
+@import 'includes/bootstrap_grid';
+@import 'includes/breakpoints';
+
+
+$heading-xxs: 14px;
+$heading-xs: 18px;
+$heading-s: 22px;
+$heading-m: 26px;
+$heading-l: 30px;
+$heading-xl: 34px;
+$heading-xxl: 38px;
+
+
+$text-xxs: 8px;
+$text-xs: 12px;
+$text-s: 14px;
+$text-m: 16px;
+$text-l: 18px;
+$text-xl: 20px;
+$text-xxl: 24px;
+
+
+$spacer-xxs: 4px;
+$spacer-xs: 8px;
+$spacer-s: 16px;
+$spacer-m: 24px;
+$spacer-l: 32px;
+$spacer-xl: 40px;
+$spacer-xxl: 80px;
+
+
+:root {
+	////// NEW COLOR PALLETE
+
+	//--- fonts
+	--ul-font-primary: 'MetropolisRegular', sans-serif;
+	--ul-font-secondary: 'Lato', sans-serif;
+	;
+	//--- colors
+	--ul-uledger: #d5d5d6;
+	--deep-blue: #1e2d3c;
+	--ul-bg-app: #f0f1f2; // background app
+	--ul-bg-app-2: #d2d9e241; // background app auxiliary
+	--ul-bg-error: white;
+	--ul-bg-card: #fafafbde; // background card
+	--ul-txt-primary: #1e2d3c; // color text primary
+	--ul-txt-secondary: #808080fd; // color text secondary
+	--ul-bg-card-2: #04539c85; // background card
+	--ul-card-hover: white;
+	--ul-bg-card-solid: #ffffff;
+	--ul-shadow: #b8b9bb3b;
+	--ul-bg-sidebar: #fdfdfd; // background sidebar
+	--ul-form-color: rgb(211, 215, 216);
+	--ul-linear-gradient: linear-gradient(64deg, rgba(70, 183, 73, 0.8169642857142857) 0%, rgba(40, 172, 227, 0.9122023809523809) 100%);
+	--ul-light-grey: #e5e7eb;
+	--ul-light-grey-2: #e7eaeb; // light gray color
+	--ul-light-grey-3: #d1d4d7;
+	--ul-dark-grey-1: #c2c5c2;
+	--ul-grey-scrollbar:#dbe1e7;
+
+	--ul-green: #25A174;
+	--ul-green-auxiliary: #00C9A7;
+	--ul-green-auxiliary-transparent: #00c9a72a;
+
+	--ul-blue: #2292c2; //blue primary
+	--ul-blue-light: #6eb1ce1e;
+	--ul-blue-transparent: #28abe321;
+	--ul-blue-dark: #155672;
+
+	--ul-danger: rgb(197, 84, 84);
+	--ul-danger-transparent: rgba(197, 84, 84, 0.118);
+
+	--ul-red: #cc3123;
+	--ul-white: white;
+	--ul-black: black;
+
+	--ul-yellow: #dbad4c;
+	--ul-yellow-transparent: #ffe3ae;
+
+	--ul-bg-breadrumb: #d5e2f3;
+
+	//--- sizes
+	--ul-spacer-xxs: 4px;
+	--ul-spacer-xs: 8px;
+	--ul-spacer-s: 16px;
+	--ul-spacer-m: 24px;
+	--ul-spacer-l: 32px;
+	--ul-spacer-xl: 40px;
+	--ul-spacer-xxl: 80px;
+
+	--ul-text-xxs: 8px;
+	--ul-text-xs: 12px;
+	--ul-text-s: 14px;
+	--ul-text-m: 16px;
+	--ul-text-l: 18px;
+	--ul-text-xl: 20px;
+	--ul-text-xxl: 24px;
+	//// END NEW COLOR PALLETE
+
+	--heading-xxs: 14px;
+	--heading-xs: 20px;
+	--heading-s: 30px;
+	--heading-m: 40px;
+	--heading-l: 50px;
+	--heading-xl: 60px;
+	--heading-xxl: 70px;
+
+
+	--text-xxs: 8px;
+	--text-xs: 12px;
+	--text-s: 14px;
+	--text-m: 16px;
+	--text-l: 18px;
+	--text-xl: 20px;
+	--text-xxl: 24px;
+
+
+	--spacer-xxs: 4px;
+	--spacer-xs: 8px;
+	--spacer-s: 16px;
+	--spacer-m: 24px;
+	--spacer-l: 32px;
+	--spacer-xl: 40px;
+	--spacer-xxl: 80px;
+}
+
+
+body.dark {
+	////// NEW COLOR PALLETE
+
+	//--- colors
+	--ul-uledger:#1b2937;
+	--ul-bg-app: #18212c; // background app
+	--ul-bg-app-2: #18202b99; // background app auxiliary
+	--ul-bg-error: white;
+	--ul-txt-primary: #c8ceca; // text color primary
+	--ul-txt-secondary: #8f9796; // color text secondary
+	--ul-bg-card-2: #212b34a8; // background card
+	--ul-bg-card: #212b35ec;
+	--ul-card-hover: rgba(47, 59, 71, 0.72);
+	--ul-bg-card-solid: #24313c;
+	--ul-bg-sidebar: #232e38; // background sidebar
+	--ul-form-color: #404c54;
+	--ul-shadow: #00000026;
+	--ul-light-grey: #3f505a8a;
+	--ul-light-grey-2: #4e4e4e;
+	--ul-light-grey-3: rgb(34, 36, 41);
+	--ul-dark-grey-1: #585c61;
+	--ul-grey-scrollbar:#374856;
+
+	--ul-green: #349377;
+	--ul-green-auxiliary: #02b194;
+	--ul-green-auxiliary-transparent: #00c9a71c;
+
+	--ul-blue: #2695c4;
+	--ul-blue-light: #228cb98a;
+	--ul-blue-transparent: #5090ac28;
+	--ul-blue-dark: #64c2eb; //blue primary
+	--ul-danger: rgb(194, 87, 87);
+	--ul-danger-transparent: rgba(119, 47, 47, 0.183);
+	--ul-red: #99281e;
+	--ul-white: rgb(208, 210, 212);
+	--ul-black: rgb(70, 70, 70);
+	--ul-yellow: #916912;
+	--ul-yellow-transparent: #a48448;
+	--ul-bg-breadrumb: #303E48;
+	//// END NEW COLOR PALLETE
+}
